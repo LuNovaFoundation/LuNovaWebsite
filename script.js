@@ -112,7 +112,7 @@ const sidebarData = {
       <p>We design products and programs with a single focus: meeting children exactly where they are, celebrating how their minds work, and giving them the tools to thrive.</p>
       <div class="sb-divider"></div>
       <div class="sb-meta">
-        <div class="sb-meta-item"><span class="sb-meta-label">Founded</span><span>2024</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Founded</span><span>2026</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Headquarters</span><span>Ho Chi Minh City, Vietnam</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Status</span><span>Active Non-Profit</span></div>
       </div>
@@ -176,7 +176,7 @@ const sidebarData = {
     body: `
       <p>LuNova began with a conversation between two friends — an educator working in Vietnam and a product designer frustrated by how little of the design world's tools ever reached the children who needed them most.</p>
       <p>After months of research and on-the-ground conversations with families in Ho Chi Minh City, the pattern became clear: parents of neurodivergent children desperately wanted resources but had no access, no guidance, and no community to turn to.</p>
-      <p>In 2024, LuNova officially launched with a small seed fund and a big belief: that beautiful, purposeful design could change a child's life. The Gearboard Project was the first proof of that belief.</p>
+      <p>In 2026, LuNova officially launched with a small seed fund and a big belief: that beautiful, purposeful design could change a child's life. The Gearboard Project was the first proof of that belief.</p>
     `
   },
   'team-founder': {
