@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuNova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo" onclick="navigateTo('home')" style="cursor:pointer;">
+        <div class="logo-placeholder">
+          <span class="logo-icon">◈</span>
+        </div>
+        <span class="logo-wordmark">LuNova</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-page="about">About Us</a></li>
+        <li><a href="#projects" class="nav-link" data-page="projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ───────────────── HOME PAGE ───────────────── -->
+  <section id="home" class="page active">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <img
+          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80"
+          alt="Children learning"
+          class="hero-img"
+        />
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">Non-Profit Organization</p>
+        <h1 class="hero-title reveal">Illuminate.<br/>Innovate.<br/>Empower.</h1>
+        <p class="hero-sub reveal">LuNova creates meaningful change for neurodivergent children across Vietnam — one project at a time.</p>
+        <div class="hero-actions reveal">
+          <button class="btn-primary" onclick="navigateTo('projects')">Our Projects</button>
+          <button class="btn-ghost" onclick="navigateTo('about')">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mission Strip -->
+    <div class="mission-strip">
+      <div class="container">
+        <p class="mission-text reveal">"Every child deserves the tools to thrive — regardless of how their mind works."</p>
+      </div>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal">What We Do</p>
+        <h2 class="section-title reveal">Building a better world,<br/>one project at a time.</h2>
+        <div class="cards-grid">
+          <div class="card reveal clickable" data-sidebar="mission">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="Mission" />
+              <div class="card-overlay"><span>Learn More ↗</span></div>
+            </div>
+            <div class="card-body">
+              <h3>Our Mission</h3>
+              <p>We design inclusive tools and programs that help neurodivergent children discover their strengths.</p>
+            </div>
+          </div>
+          <div class="card reveal clickable" data-sidebar="gearboard">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Gearboards" />
+              <div class="card-overlay"><span>Learn More ↗</span></div>
+            </div>
+            <div class="card-body">
+              <h3>Gearboards</h3>
+              <p>Our flagship project — sensory gearboards crafted for neurodivergent children in Vietnam.</p>
+            </div>
+          </div>
+          <div class="card reveal clickable" data-sidebar="community">
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Community" />
+              <div class="card-overlay"><span>Learn More ↗</span></div>
+            </div>
+            <div class="card-body">
+              <h3>Community</h3>
+              <p>Partnering with local families and educators to foster lasting, sustainable impact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat reveal">
+            <span class="stat-num">120+</span>
+            <span class="stat-label">Children Reached</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Provinces Served</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Active Project</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num">2024</span>
+            <span class="stat-label">Founded</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <div class="container">
+        <h2 class="reveal">Ready to make a difference?</h2>
+        <p class="reveal">Join LuNova in building brighter futures for children across Vietnam.</p>
+        <button class="btn-primary reveal">Get Involved</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ───────────────── ABOUT PAGE ───────────────── -->
+  <section id="about" class="page">
+
+    <div class="page-hero short">
+      <div class="page-hero-bg">
+        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1600&q=80" alt="About Us" />
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="page-hero-content">
+        <p class="hero-eyebrow reveal" style="color:#fff">Who We Are</p>
+        <h1 class="page-hero-title reveal">About LuNova</h1>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="two-col reveal">
+          <div class="col-text">
+            <p class="section-eyebrow">Our Story</p>
+            <h2>Born from a belief that every child deserves to shine.</h2>
+            <p>LuNova was founded in 2024 by a small group of educators, designers, and advocates who saw a critical gap in resources available to neurodivergent children in Vietnam. With limited access to specialized tools and support systems, many children were falling through the cracks of a system not yet built for them.</p>
+            <p>We started with a simple question: <em>What if we designed something just for them?</em> That question became our Gearboard project — and the beginning of LuNova.</p>
+          </div>
+          <div class="col-img clickable" data-sidebar="story">
+            <img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=800&q=80" alt="Our story" />
+            <div class="card-overlay"><span>Our Story ↗</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section alt-bg">
+      <div class="container">
+        <p class="section-eyebrow reveal" style="text-align:center">Our Values</p>
+        <h2 class="section-title reveal">The principles that guide us.</h2>
+        <div class="values-grid">
+          <div class="value-card reveal">
+            <div class="value-icon">✦</div>
+            <h3>Inclusion</h3>
+            <p>We design every program and tool with accessibility and neurodiversity at the center — not as an afterthought.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="value-icon">◈</div>
+            <h3>Innovation</h3>
+            <p>We look for creative, research-backed solutions to problems that traditional organizations have overlooked.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="value-icon">❋</div>
+            <h3>Community</h3>
+            <p>We work alongside local families and educators, not above them. Real change starts from within the community.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="value-icon">◇</div>
+            <h3>Transparency</h3>
+            <p>Every dollar donated is accounted for. We share our progress openly and honestly — the wins and the challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal" style="text-align:center">The Team</p>
+        <h2 class="section-title reveal">Meet the people behind LuNova.</h2>
+        <div class="team-grid">
+          <div class="team-card reveal clickable" data-sidebar="team-founder">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Founder" />
+              <div class="card-overlay"><span>Meet ↗</span></div>
+            </div>
+            <h4>Jane Placeholder</h4>
+            <p>Co-Founder & Executive Director</p>
+          </div>
+          <div class="team-card reveal clickable" data-sidebar="team-design">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Design Lead" />
+              <div class="card-overlay"><span>Meet ↗</span></div>
+            </div>
+            <h4>John Placeholder</h4>
+            <p>Head of Design & Product</p>
+          </div>
+          <div class="team-card reveal clickable" data-sidebar="team-outreach">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" alt="Outreach" />
+              <div class="card-overlay"><span>Meet ↗</span></div>
+            </div>
+            <h4>Alex Placeholder</h4>
+            <p>Community Outreach Lead</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ───────────────── PROJECTS PAGE ───────────────── -->
+  <section id="projects" class="page">
+
+    <div class="page-hero short">
+      <div class="page-hero-bg">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&q=80" alt="Projects" />
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="page-hero-content">
+        <p class="hero-eyebrow reveal" style="color:#fff">What We Build</p>
+        <h1 class="page-hero-title reveal">Our Projects</h1>
+      </div>
+    </div>
+
+    <!-- Featured Project -->
+    <div class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal">Featured Project</p>
+        <div class="featured-project reveal clickable" data-sidebar="gearboard-full">
+          <div class="featured-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" alt="Gearboards Project" />
+            <div class="featured-badge">Active</div>
+          </div>
+          <div class="featured-body">
+            <span class="tag">Sensory Tools · Vietnam</span>
+            <h2>Gearboards for Neurodivergent Children</h2>
+            <p>Our first and flagship initiative, the Gearboard Project designs and distributes custom sensory activity boards to neurodivergent children in Vietnam who lack access to occupational therapy resources. Each gearboard is handcrafted with age-appropriate sensory components to support focus, fine motor development, and self-regulation.</p>
+            <div class="project-meta">
+              <div class="meta-item"><span class="meta-label">Location</span><span>Ho Chi Minh City, Vietnam</span></div>
+              <div class="meta-item"><span class="meta-label">Status</span><span class="status-dot">Active</span></div>
+              <div class="meta-item"><span class="meta-label">Children Served</span><span>120+</span></div>
+            </div>
+            <button class="btn-primary">Read Full Story ↗</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coming Soon -->
+    <div class="section alt-bg">
+      <div class="container">
+        <p class="section-eyebrow reveal" style="text-align:center">More to Come</p>
+        <h2 class="section-title reveal">The pipeline is growing.</h2>
+        <p class="section-sub reveal">LuNova is actively developing new programs. Check back soon as we expand into new areas of impact.</p>
+        <div class="coming-grid">
+          <div class="coming-card reveal clickable" data-sidebar="coming-edu">
+            <div class="coming-img">
+              <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&q=80" alt="Education" />
+              <div class="coming-overlay">Coming Soon</div>
+            </div>
+            <div class="coming-body">
+              <span class="tag">Education</span>
+              <h3>Inclusive Learning Kits</h3>
+              <p>Modular learning toolkits designed for classrooms with mixed learning needs across rural Vietnam.</p>
+            </div>
+          </div>
+          <div class="coming-card reveal clickable" data-sidebar="coming-tech">
+            <div class="coming-img">
+              <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80" alt="Technology" />
+              <div class="coming-overlay">Coming Soon</div>
+            </div>
+            <div class="coming-body">
+              <span class="tag">Technology</span>
+              <h3>Assistive Tech Program</h3>
+              <p>Sourcing and distributing affordable assistive technology to families who need it most.</p>
+            </div>
+          </div>
+          <div class="coming-card reveal clickable" data-sidebar="coming-family">
+            <div class="coming-img">
+              <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80" alt="Family" />
+              <div class="coming-overlay">Coming Soon</div>
+            </div>
+            <div class="coming-body">
+              <span class="tag">Family Support</span>
+              <h3>Caregiver Workshops</h3>
+              <p>Empowering parents and caregivers with knowledge, community, and practical strategies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get Involved -->
+    <div class="cta-section">
+      <div class="container">
+        <h2 class="reveal">Help us build what's next.</h2>
+        <p class="reveal">Whether you donate, volunteer, or spread the word — every action matters.</p>
+        <div class="cta-actions reveal">
+          <button class="btn-primary">Donate</button>
+          <button class="btn-ghost-dark">Volunteer</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">◈</span>
+          <span class="logo-wordmark">LuNova</span>
+        </div>
+        <p class="footer-tagline">Illuminate. Innovate. Empower.</p>
+        <nav class="footer-nav">
+          <a href="#home" onclick="navigateTo('home')">Home</a>
+          <a href="#about" onclick="navigateTo('about')">About Us</a>
+          <a href="#projects" onclick="navigateTo('projects')">Projects</a>
+          <a href="#">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2024 LuNova. All rights reserved. A non-profit organization.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ───────────────── SIDEBAR ───────────────── -->
+  <div id="sidebar-overlay" class="sidebar-overlay" onclick="closeSidebar()"></div>
+  <aside id="sidebar" class="sidebar">
+    <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+    <div id="sidebar-content" class="sidebar-content"></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
