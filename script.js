@@ -2,6 +2,26 @@
    LUNOVA — Script
    ────────────────────────────────────────────── */
 
+// ── STATS CONFIG ─────────────────────────────────
+// Edit values here — they sync everywhere on the site automatically.
+const STATS = {
+  childrenImpacted:   '[x]',
+  moneyRaised:        '[x]',
+  activeProjects:     '1',
+  founded:            '2026',
+  communityPartners:  '[x]',
+  familiesEngaged:    '[x]',
+  educatorsTrained:   '[x]',
+  childrenServedGoal: '5000',
+};
+
+function populateStats() {
+  document.querySelectorAll('[data-stat]').forEach(el => {
+    const key = el.dataset.stat;
+    if (STATS[key] !== undefined) el.textContent = STATS[key];
+  });
+}
+
 // ── NAV SCROLL ─────────────────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -109,7 +129,7 @@ const sidebarData = {
       <div class="sb-divider"></div>
       <div class="sb-meta">
         <div class="sb-meta-item"><span class="sb-meta-label">Status</span><span style="color:#22c55e;font-weight:600">● Active</span></div>
-        <div class="sb-meta-item"><span class="sb-meta-label">Children Served</span><span>120+</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Children Served</span><span data-stat="childrenImpacted"></span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Location</span><span>Ho Chi Minh City & surrounding provinces</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Partners</span><span>3 local schools, 2 family networks</span></div>
       </div>
@@ -127,9 +147,9 @@ const sidebarData = {
       <div class="sb-divider"></div>
       <div class="sb-meta">
         <div class="sb-meta-item"><span class="sb-meta-label">Status</span><span style="color:#22c55e;font-weight:600">● Active</span></div>
-        <div class="sb-meta-item"><span class="sb-meta-label">Children Served</span><span>120+</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Children Served</span><span data-stat="childrenImpacted"></span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Location</span><span>Ho Chi Minh City & surrounding provinces</span></div>
-        <div class="sb-meta-item"><span class="sb-meta-label">2025 Goal</span><span>300 children, 5 provinces</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">2025 Goal</span><span data-stat="childrenServedGoal"> children, 5 provinces</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Partners</span><span>3 local schools, 2 family networks</span></div>
       </div>
     `
@@ -143,9 +163,9 @@ const sidebarData = {
       <p>Our community partnerships connect us to local schools, parent groups, and grassroots organizations who understand the realities on the ground. They help us identify where needs are greatest, test our tools before wide rollout, and share knowledge with families long after we leave.</p>
       <div class="sb-divider"></div>
       <div class="sb-meta">
-        <div class="sb-meta-item"><span class="sb-meta-label">Community Partners</span><span>7 active</span></div>
-        <div class="sb-meta-item"><span class="sb-meta-label">Families Engaged</span><span>80+</span></div>
-        <div class="sb-meta-item"><span class="sb-meta-label">Educators Trained</span><span>24</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Community Partners</span><span data-stat="communityPartners"></span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Families Engaged</span><span data-stat="familiesEngaged"></span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Educators Trained</span><span data-stat="educatorsTrained"></span></div>
       </div>
     `
   },
@@ -268,6 +288,7 @@ function openSidebar(key) {
   document.getElementById('sidebar').classList.add('open');
   document.getElementById('sidebar-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
+  populateStats();
 }
 
 function closeSidebar() {
@@ -291,6 +312,9 @@ document.addEventListener('keydown', e => {
 
 // ── INIT ─────────────────────────────────────────
 (function init() {
+  // populate all stats from STATS config
+  populateStats();
+
   // activate home
   navigateTo('home');
 
