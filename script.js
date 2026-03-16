@@ -179,48 +179,63 @@ const sidebarData = {
       <p>In 2026, LuNova officially launched with a small seed fund and a big belief: that beautiful, purposeful design could change a child's life. The Gearboard Project was the first proof of that belief.</p>
     `
   },
-  'team-founder': {
+  'team-chair': {
     tag: 'Meet the Team',
-    title: 'Jane Placeholder — Co-Founder & Executive Director',
-    img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80',
+    title: 'Hung Duong — Chair',
+    img: 'images/Hungprofile.JPG',
     body: `
-      <p>Jane placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>She brings a decade of experience in international non-profit management and a deep personal connection to the neurodivergent community.</p>
+      <p>Hung placeholder text.</p>
+      <p>He brings a decade of experience in international non-profit management and a deep personal connection to the neurodivergent community.</p>
       <div class="sb-divider"></div>
       <div class="sb-meta">
-        <div class="sb-meta-item"><span class="sb-meta-label">Role</span><span>Co-Founder & Executive Director</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Role</span><span>Chair</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Based</span><span>Ho Chi Minh City, Vietnam</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Background</span><span>Non-profit management, Education</span></div>
       </div>
     `
   },
-  'team-design': {
+  'team-chief executive officer': {
     tag: 'Meet the Team',
-    title: 'John Placeholder — Head of Design & Product',
+    title: 'Ethan Vu — Chief Executive Officer',
     img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
     body: `
-      <p>John placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-      <p>As a product designer with roots in accessibility consulting, John leads the design and manufacturing of all LuNova tools, ensuring every product meets both quality and safety standards.</p>
+      <p>Ethan placeholder text.</p>
+      <p>As a product designer with roots in accessibility consulting, Ethan leads the design and manufacturing of all LuNova tools, ensuring every product meets both quality and safety standards.</p>
       <div class="sb-divider"></div>
       <div class="sb-meta">
-        <div class="sb-meta-item"><span class="sb-meta-label">Role</span><span>Head of Design & Product</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Role</span><span>Chief Executive Officer</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Based</span><span>Hanoi, Vietnam</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Background</span><span>Product design, Accessibility</span></div>
       </div>
     `
   },
-  'team-outreach': {
+  'team-president': {
     tag: 'Meet the Team',
-    title: 'Alex Placeholder — Community Outreach Lead',
-    img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80',
+    title: 'Vivian Duong — President',
+    img: 'images/vivianprofile.jpeg',
     body: `
-      <p>Alex placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <p>Alex works directly with families, schools, and community organizations to build and maintain the relationships that make LuNova's work possible.</p>
+      <p>Vivian placeholder text.</p>
+      <p>Vivian works directly with families, schools, and community organizations to build and maintain the relationships that make LuNova's work possible.</p>
       <div class="sb-divider"></div>
       <div class="sb-meta">
-        <div class="sb-meta-item"><span class="sb-meta-label">Role</span><span>Community Outreach Lead</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Role</span><span>President</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Based</span><span>Da Nang, Vietnam</span></div>
         <div class="sb-meta-item"><span class="sb-meta-label">Background</span><span>Social work, Community organizing</span></div>
+      </div>
+    `
+  },
+  'team-secretary': {
+    tag: 'Meet the Team',
+    title: 'Diem Vu — Secretary/Treasurer',
+    img: '',
+    body: `
+      <p>Diem placeholder text.</p>
+      <p>Diem manages LuNova's administrative and financial operations, ensuring the organization runs smoothly and remains accountable to its mission.</p>
+      <div class="sb-divider"></div>
+      <div class="sb-meta">
+        <div class="sb-meta-item"><span class="sb-meta-label">Role</span><span>Secretary/Treasurer</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Based</span><span>Vietnam</span></div>
+        <div class="sb-meta-item"><span class="sb-meta-label">Background</span><span>Administration, Finance</span></div>
       </div>
     `
   },
