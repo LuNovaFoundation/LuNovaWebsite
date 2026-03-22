@@ -768,6 +768,138 @@ button { border: none; cursor: pointer; font-family: inherit; }
 .coming-body h3 { font-size: 17px; font-weight: 600; margin-bottom: 8px; }
 .coming-body p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
 
+/* ── SKILL TABS ────────────────────────────── */
+.skill-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-tab {
+  padding: 10px 26px;
+  border-radius: 980px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.skill-tab:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.skill-tab.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ── TAB PANELS ─────────────────────────────── */
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+/* ── PRODUCT TABLE ──────────────────────────── */
+.product-table-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table thead th {
+  background: var(--surface);
+  padding: 14px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.product-table tbody tr {
+  border-bottom: 1px solid var(--surface-2);
+  transition: background var(--transition-fast);
+}
+
+.product-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.product-table tbody tr:hover {
+  background: var(--surface);
+}
+
+.product-table td {
+  padding: 24px 20px;
+  vertical-align: top;
+}
+
+.product-img-cell {
+  width: 120px;
+}
+
+.product-img-placeholder {
+  width: 100px;
+  height: 75px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+}
+
+.product-name {
+  width: 200px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.product-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.skill-list-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-list li {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  background: rgba(95, 151, 225, 0.1);
+  border: 1px solid rgba(95, 151, 225, 0.25);
+  border-radius: 980px;
+  padding: 3px 10px;
+}
+
 /* ── FOOTER ────────────────────────────────── */
 footer {
   background: var(--text);
@@ -982,4 +1114,7 @@ footer {
   .hero-title { font-size: 42px; }
   .section { padding: 64px 0; }
   .cta-section { padding: 72px 24px; }
+  .product-table-wrap { overflow-x: auto; }
+  .product-img-cell { display: none; }
+  .product-name { width: 140px; }
 }

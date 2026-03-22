@@ -120,7 +120,7 @@ const sidebarData = {
   },
   gearboard: {
     tag: 'Flagship Project',
-    title: 'Gearboards for Neurodivergent Children',
+    title: 'Vietnam Spring 2026',
     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     body: `
       <p>The Gearboard Project is LuNova's first and most active initiative. We design and distribute custom sensory activity boards — "gearboards" — to neurodivergent children across Vietnam who have no access to occupational therapy resources.</p>
@@ -137,7 +137,7 @@ const sidebarData = {
   },
   'gearboard-full': {
     tag: 'Flagship Project',
-    title: 'Gearboards for Neurodivergent Children',
+    title: 'Vietnam Spring 2026',
     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     body: `
       <p>The Gearboard Project is LuNova's first and most active initiative. We design and distribute custom sensory activity boards — "gearboards" — to neurodivergent children across Vietnam who have no access to occupational therapy resources.</p>
@@ -241,7 +241,7 @@ const sidebarData = {
   },
   'coming-edu': {
     tag: 'Coming Soon',
-    title: 'Inclusive Learning Kits',
+    title: 'Vietnam Summer 2026',
     img: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&q=80',
     body: `
       <p>Our next initiative focuses on bringing modular, inclusive learning toolkits to classrooms across rural Vietnam — equipping teachers with the resources and knowledge they need to support students with diverse learning needs.</p>
@@ -256,7 +256,7 @@ const sidebarData = {
   },
   'coming-tech': {
     tag: 'Coming Soon',
-    title: 'Assistive Technology Program',
+    title: 'Vietnam Fall 2026',
     img: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
     body: `
       <p>Assistive technology can be transformative for neurodivergent individuals — but cost and availability put it out of reach for most families in Vietnam. LuNova's Assistive Tech Program aims to bridge that gap.</p>
@@ -271,7 +271,7 @@ const sidebarData = {
   },
   'coming-family': {
     tag: 'Coming Soon',
-    title: 'Caregiver Workshops',
+    title: 'Vietnam Winter 2026',
     img: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80',
     body: `
       <p>Parents and caregivers of neurodivergent children often feel isolated, overwhelmed, and without support. LuNova's Caregiver Workshop series will create safe, informed spaces for families to learn, connect, and grow together.</p>
@@ -322,6 +322,18 @@ document.querySelectorAll('.clickable[data-sidebar]').forEach(el => {
 // Keyboard close
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeSidebar();
+});
+
+
+// ── SKILL TABS ────────────────────────────────────
+document.querySelectorAll('.skill-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.tab;
+    document.querySelectorAll('.skill-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + target).classList.add('active');
+  });
 });
 
 
