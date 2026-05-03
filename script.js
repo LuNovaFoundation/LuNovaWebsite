@@ -120,8 +120,8 @@ const sidebarData = {
   },
   gearboard: {
     tag: 'Flagship Project',
-    title: 'Vietnam Spring 2026',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    title: 'Vietnam Summer 2026',
+
     body: `
       <p>The Gearboard Project is LuNova's first and most active initiative. We design and distribute custom sensory activity boards — "gearboards" — to neurodivergent children across Vietnam who have no access to occupational therapy resources.</p>
       <p>Each board is thoughtfully crafted with age-appropriate sensory components including textured panels, spinning gears, sliding tracks, and tactile elements that promote focus, fine motor skill development, and self-regulation.</p>
@@ -137,7 +137,7 @@ const sidebarData = {
   },
   'gearboard-full': {
     tag: 'Flagship Project',
-    title: 'Vietnam Spring 2026',
+    title: 'Vietnam Summer 2026',
     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     body: `
       <p>The Gearboard Project is LuNova's first and most active initiative. We design and distribute custom sensory activity boards — "gearboards" — to neurodivergent children across Vietnam who have no access to occupational therapy resources.</p>
